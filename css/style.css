@@ -7,12 +7,20 @@ body {
     background-color: #eccb5c;
     color: #da4747;
 }
+
+img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 article {
     font-family: Arial, sans-serif;
     font-style: italic;
+    width: 500px;
     padding: 20px;
-    margin: 20px;  
-    margin-right: 900px;
+    margin-right: 20%;  
     background-color: #fff;
     color: #333;
     border-radius: 5px;
