@@ -1,16 +1,48 @@
 /* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
 
+header {
+    background-color: #bdbcb9;
+    
+    text-align: center;
+}
+
+.header h1 {
+    color: #1b1a1a;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-start;
+    margin-left: relative;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a {
+    color: #1b1a1a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eccb5c;
+    background-color: #ffffff;
     color: #da4747;
 }
 
 img {
-    max-width: 200px;
-    height: relative;
+    max-width: 100px;
+    height: auto;
     display: block;
     margin: 0 auto;
 }
@@ -24,6 +56,8 @@ img {
 article {
     font-family: Arial, sans-serif;
     font-style: italic;
+    top: 20px;
+    position: relative;
     width: 300px;
     height: 300px;
     padding: 20px;
@@ -36,7 +70,7 @@ article {
 
 aside {
     position: relative;
-    top : 1px;
+    top : 20px;
     width: 300px;
     padding: 20px;
     margin-top: 1px;
