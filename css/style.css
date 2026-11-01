@@ -1,83 +1,138 @@
-/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
-
-header {
-    background-color: #bdbcb9;
-    
-    text-align: center;
-}
-
-.header h1 {
-    color: #1b1a1a;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-left: 20px;
-}
-
-.navbar {
-    display: flex;
-    align-items: flex-start;
-    margin-left: relative;
-    gap: 20px;
-    padding: 10px;
-}
-
-nav a {
-    color: #1b1a1a;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #da4747;
+  margin: 0;
 }
 
-img {
-    max-width: 100px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.content {
+.nave {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #4A2C20;
+}
+
+.nave h1 {
+  margin: 0;
+}
+
+.nave h1 img {
+  width: 90px;
+  height: auto ;
+}
+
+.nave h2 {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.nave h2 a {
+  padding: 1px 14px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+.nave h2 a.active {
+  color: black;
+  background-color: #D9A441;
+}
+
+.header-search input {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 8px 12px;
+  border: 1px solid #d9d2cd;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.header-search {
+  margin-left: 16px;
+}
+
+.home-hero {
+  padding-top: 12px;
+  background-color: #D9A441;
+}
+
+.home-hero img {
+  display: block;
+  width: 100%;
+  max-height: 432px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.intro {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 24px;
+  width: 954px;
+  max-width: calc(100% - 48px);
+  height: 300px;
+  margin: 24px auto;
+  padding: 0 10px 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.intro-text {
+  margin: 0;
+  text-align: left;
+}
+
+.intro .Brok {
+  margin: 0;
+  font-size: 62px;
+  font-weight: 700;
+}
+
+.intro-description {
+  font-size: 50px;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 50px 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
   gap: 20px;
+  background-color: transparent;
 }
 
-article {
-    font-family: Arial, sans-serif;
-    font-style: italic;
-    top: 20px;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    margin: 0;
-    background-color: #fff;
-    color: #333;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.card img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-aside {
-    position: relative;
-    top : 20px;
-    width: 300px;
-    padding: 20px;
-    margin-top: 1px;
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: #f9f9f9;
-    color: #333;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.label {
+  background-color: #5a2e1f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
+
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    min-height: 333px;
+  }
 }
